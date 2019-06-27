@@ -69,6 +69,7 @@ function CircleObject(x, y, dx, dy, rad) {
         else if (this.rad > origRad) {
             this.rad -= .5;
         }
+        this.draw();
     }
 }
 
@@ -93,8 +94,7 @@ function animate() {
     board.fillStyle = "white";
     board.textAlign = "center";
     board.fillText("h e l l o  w o r l d .", canvas.width/2, canvas.height/2); 
-    for (var i = 0; i < circleObjs.length; i++) {
-        circleObjs[i].draw();      
+    for (var i = 0; i < circleObjs.length; i++) {    
         circleObjs[i].update();
     }
 }

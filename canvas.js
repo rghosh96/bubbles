@@ -81,7 +81,7 @@ for (var i = 0; i < 350; i++) {
     //-.5  allows between -.5 to .5 as the range since originally returns 0 to 1
     var dx = (Math.random()-.5)*2;     //range is now -1 to 1
     var dy = (Math.random()-.5)*2;
-    var rad = 20*Math.random();
+    var rad = 20*Math.random() + 1;
     circleObjs.push(new CircleObject(x, y, dx, dy, rad));
 }
 
